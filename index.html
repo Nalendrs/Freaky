@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+    body  {
+      background-color: #e9b66e;
+      font-family: "Kanit", sans-serif;
+      font-weight: 300;
+    }
+    .atas {
+        width: 100%; /* Atur lebar sesuai kebutuhan */
+        margin: 0 auto; /* Menempatkan elemen di tengah horizontal */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Judul  { 
+        font-size: 55px;
+        color: black;
+    }
+    .paragraf{
+      text-align: center;
+      font-size: 18px;
+    }
+    .trans {
+        text-align: left;
+        font-size: 18px;
+    }
+    .isi {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .service{
+      padding: 25px;
+      font-size: 35px;
+    }
+    .col{
+      border: 2px solid #928989; /* Membuat border atau kotak */
+      padding: 20px; /* Menambahkan jarak di dalam box */
+      margin: 20px;
+      background-color: #f9f9f9; /* Memberikan warna latar belakang */
+      align-items: center;
+      border-radius: 10px; /* Opsional: membuat sudut border lebih halus */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .btn{
+      border-radius: 30px;
+      background-color: white;
+    }
+    .bt{
+      border-radius: 10px;
+      background-color: white;
+      margin: 10px;
+      border: none; /* Menghilangkan border default */
+      color: black; /* Menentukan warna teks */
+      padding: 10px 15px; /* Memberikan padding yang nyaman */
+      cursor: pointer; /* Mengubah kursor saat hover */
+      transition: background-color 0.3s ease; /* Transisi untuk efek hover */
+    }
+    .bt:hover {
+    background-color: rgb(148, 150, 134); /* Mengubah warna latar belakang saat hover */
+    }
+    .navbar-brand {
+    font-size: 45px; /* Mengatur ukuran font menjadi 45px */
+    font-weight: bold; /* Menebalkan teks (opsional) */
+    }
+    .OP {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    .OP :hover{
+      background-color: rgb(136, 136, 104); /* Mengubah warna latar belakang saat hover */
+      transform: scale(1.05); /* Membesar sedikit saat hover */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat hover */
+    }
+    .custom-navbar{
+      background-color: #eba43f;
+      color: white;
+    }
+    .fut{
+      position: relative;
+      left: 7%;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg custom-navbar"> <!-- Tambahkan class custom-navbar -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">I Drive</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Layanan Kami</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Harga</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lainnya
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Jangkauan</a></li>
+                  <li><a class="dropdown-item" href="#">Mitra Kami</a></li>
+                  <li><a class="dropdown-item" href="#">Kontak Kami</a></li>
+                </ul>
+              </li>
+            </ul>
+            <a class="navbar-brand mx-auto"></a>
+            <form class="d-flex ms-auto">
+                <button class="bt" type="submit">Sign Up</button>
+                <button class="bt" type="submit">Sign In</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <div class="atas">
+        <div class="Judul">
+            <h1>
+                <b>Your First Trip</b>
+            </h1>
+        </div>
+    </div>
+    <br>
+
+    <div class="isi">
+        <div class="paragraf">
+            <p>
+              Kami adalah perusahaan transportasi kereta api terkemuka yang berkomitmen untuk menyediakan layanan transportasi yang aman, cepat, dan nyaman bagi penumpang kami.
+              Kami telah membangun reputasi sebagai penyedia layanan yang dapat diandalkan di seluruh negara.
+            </p>
+                  <div class="Judul">
+                    <h1>
+                      <b>Layanan Kami</b>
+                    </h1>
+                  </div>
+                    <div class="trans">
+                    <ul>
+                      <li><strong>Kereta Penumpang:</strong> Layanan kereta penumpang yang nyaman dengan berbagai kelas untuk memenuhi kebutuhan setiap penumpang.</li>
+                      <li><strong>Kereta Barang:</strong> Solusi transportasi barang yang efisien untuk bisnis, memungkinkan pengiriman cepat dan aman ke seluruh wilayah.</li>
+                      <li><strong>Pengiriman Barang:</strong> Layanan tambahan untuk memudahkan Anda mencapai stasiun dan tujuan akhir Anda.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div class="container text-center">
+      <div class="Judul">
+        <h1>
+          <b>Mengapa Kami</b>
+        </h1>
+      </div>
+        <div class="row">
+          <div class="col">
+            Aman Dan Terpercaya
+          </div>
+          <div class="col">
+            Jangkauan Sabang Sampai Merauke
+          </div>
+          <div class="col">
+            Harga Berkualitas
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="OP">
+      <button type="button" class="btn">Pesan Sekarang</button>
+    </div>
+    <br>
+    <br>
+    <footer class="text-center text-lg-start" style="padding: 20px; background-color: #e9b66e;">
+      <div class="container p-4">
+          <div class="row">
+              <div class="col-lg-4 col-md-12 mb-4">
+                  <h5 class="text-uppercase">Tentang Kami</h5>
+                  <p>
+                      I Drive adalah perusahaan transportasi kereta api yang berkomitmen untuk memberikan layanan aman, cepat, dan nyaman. 
+                      Kami melayani berbagai rute dan menyediakan layanan yang sesuai dengan kebutuhan Anda.
+                  </p>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4 fut">
+                  <h5 class="text-uppercase fu">Layanan Kami</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-dark">Kereta Penumpang</a></li>
+                      <li><a href="#" class="text-dark">Kereta Barang</a></li>
+                      <li><a href="#" class="text-dark">Layanan Antar-Jemput</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <h5 class="text-uppercase">Kontak Kami</h5>
+                  <p>Email: <a href="mailto:fauzyasn@gmail.com" class="text-dark">info@perusahaan.com</a></p>
+                  <p>Telepon: <a href="tel:+62123456789" class="text-dark">+62 123 456 789</a></p>
+                  <p>Alamat: 12339 Lakewood Blvd, Downey, CA 90242, USA</p>
+              </div>
+          </div>
+      </div>
+      <div class="text-center p-3" style="background-color: #d8a65c;">
+          &copy; 2024 I Drive. All rights reserved.
+      </div>
+  </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
